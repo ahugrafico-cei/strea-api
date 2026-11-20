@@ -1,0 +1,30 @@
+### GET - Obtener todas las películas
+GET http://localhost:4000/api/movies
+
+### GET - Obtener una película por ID
+GET http://localhost:4000/api/movies/6ae4acc2648ec7fce27f0ce1
+
+### POST - Crear una película
+POST http://localhost:4000/api/movies
+Content-Type: application/json
+
+{
+    "title": "Interstellar Test",
+    "year": 2014,
+    "genre": "Ciencia ficcion",
+    "watched": false,
+    "userId": "user_001"
+}
+
+### PUT - Actualizar película
+PUT http://localhost:4000/api/movies/6aff3507aa2e89eacd77971d
+Content-Type: application/json
+
+{
+    "watched": true
+}
+
+### DELETE - Eliminar película
+DELETE http://localhost:4000/api/movies/6aff3507aa2e89eacd77971d
+
+

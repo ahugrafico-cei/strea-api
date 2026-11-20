@@ -1,0 +1,68 @@
+
+{
+  "info": {
+    "name": "Strea API",
+    "description": "Colección de pruebas CRUD para la API REST de Strea.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener todas las películas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:4000/api/movies"
+      }
+    },
+    {
+      "name": "Obtener una película por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:4000/api/movies/ID_DE_UNA_PELICULA"
+      }
+    },
+    {
+      "name": "Crear una película",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Interstellar Test\",\n  \"year\": 2014,\n  \"genre\": \"Ciencia ficción\",\n  \"watched\": false,\n  \"userId\": \"user_001\"\n}"
+        },
+        "url": "http://localhost:4000/api/movies"
+      }
+    },
+    {
+      "name": "Actualizar una película",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"watched\": true\n}"
+        },
+        "url": "http://localhost:4000/api/movies/ID_DE_UNA_PELICULA"
+      }
+    },
+    {
+      "name": "Eliminar una película",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:4000/api/movies/ID_DE_UNA_PELICULA"
+      }
+    }
+  ]
+}
