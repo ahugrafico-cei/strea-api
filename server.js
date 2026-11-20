@@ -22,10 +22,7 @@ servidor.get("/", (request, response) => {
 servidor.use("/api/movies", movieRoutes);
 
 // Middleware para rutas no encontradas (404)
-// Ruta temporal para comprobar el middleware 500
-servidor.get("/prueba-error", (request, response, next) => {
-    next(new Error("Error de prueba 500"));
-});
+
 
 servidor.use(noEncontrado);
 
