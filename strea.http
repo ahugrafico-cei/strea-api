@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### PUT - Actualizar una película (Interstellar)
-PUT https://strea-api.vercel.app/api/movies/6b006d00feb3f1b2df12ff6e
+PUT https://strea-api.vercel.app/api/movies/6ae4acc2648ec7fce27f0ce2
 Content-Type: application/json
 
 {
@@ -25,5 +25,4 @@ Content-Type: application/json
 }
 
 ### DELETE - Eliminar una película
-DELETE https://strea-api.vercel.app/api/movies/6b006d00feb3f1b2df12ff6e
-
+DELETE https://strea-api.vercel.app/api/movies/6b006d01feb3f1b2df12ff6f
