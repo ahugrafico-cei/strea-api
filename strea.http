@@ -5,7 +5,7 @@ GET http://localhost:4000/api/movies
 GET http://localhost:4000/api/movies/6ae4acc2648ec7fce27f0ce1
 
 ### POST - Crear una película
-POST http://localhost:4000/api/movies
+POST https://strea-api.vercel.app/api/movies
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### PUT - Actualizar película
-PUT http://localhost:4000/api/movies/6aff3507aa2e89eacd77971d
+PUT https://strea-api.vercel.app/api/movies/6aff3507aa2e89eacd77971d
 Content-Type: application/json
 
 {
@@ -25,6 +25,6 @@ Content-Type: application/json
 }
 
 ### DELETE - Eliminar película
-DELETE http://localhost:4000/api/movies/6aff3507aa2e89eacd77971d
+DELETE https://strea-api.vercel.app/api/movies/6aff3507aa2e89eacd77971d
 
 
