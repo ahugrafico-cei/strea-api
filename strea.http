@@ -1,30 +1,29 @@
 ### GET - Obtener todas las películas
-GET http://localhost:4000/api/movies
+GET https://strea-api.vercel.app/api/movies
 
-### GET - Obtener una película por ID
-GET http://localhost:4000/api/movies/6ae4acc2648ec7fce27f0ce1
+### GET - Obtener una película por ID (Dune)
+GET https://strea-api.vercel.app/api/movies/6ae4acc2648ec7fce27f0ce1
 
 ### POST - Crear una película
 POST https://strea-api.vercel.app/api/movies
 Content-Type: application/json
 
 {
-    "title": "Interstellar Test",
-    "year": 2014,
-    "genre": "Ciencia ficcion",
+    "title": "Avatar - Prueba PEC",
+    "year": 2009,
+    "genre": "Ciencia ficción",
     "watched": false,
     "userId": "user_001"
 }
 
-### PUT - Actualizar película
-PUT https://strea-api.vercel.app/api/movies/6aff3507aa2e89eacd77971d
+### PUT - Actualizar una película (Interstellar)
+PUT https://strea-api.vercel.app/api/movies/6b006d00feb3f1b2df12ff6e
 Content-Type: application/json
 
 {
     "watched": true
 }
 
-### DELETE - Eliminar película
-DELETE https://strea-api.vercel.app/api/movies/6aff3507aa2e89eacd77971d
-
+### DELETE - Eliminar una película
+DELETE https://strea-api.vercel.app/api/movies/6b006d00feb3f1b2df12ff6e
 
